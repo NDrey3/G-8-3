@@ -124,6 +124,7 @@
   }
 
   &__list {
+    counter-reset: counter;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -142,18 +143,25 @@
   }
 
   &__list-item {
+    counter-increment: counter;
+    position: relative;
     display: flex;
     align-items: flex-start;
+    min-height: 48px;
     gap: 0 12px;
+    padding: 0 0 0 60px;
 
     @include vp-768 {
+      min-height: 56px;
       gap: 0 20px;
+      padding: 0 0 0 76px;
     }
 
     @include vp-1024 {
       flex-direction: column;
       align-items: center;
       gap: 20px 0;
+      padding: 92px 0 0 0;
     }
 
     @include vp-1304 {
@@ -161,16 +169,16 @@
     }
 
     &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 48px;
       height: 48px;
       display: flex;
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 22px;
-      color: $color-white;
       background-color: $color-royal-blue-1;
       border-radius: 50%;
 
@@ -182,6 +190,9 @@
       }
 
       @include vp-1024 {
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
         width: 72px;
         height: 72px;
         font-size: 28px;
@@ -189,16 +200,30 @@
       }
     }
 
-    &:first-child::before {
-      content: "1";
-    }
+    &::after {
+      content: counter(counter);
+      position: absolute;
+      top: 13px;
+      left: 20px;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: $color-white;
 
-    &:nth-child(2)::before {
-      content: "2";
-    }
+      @include vp-768 {
+        top: 15px;
+        left: 22px;
+        font-size: 20px;
+        line-height: 24px;
+      }
 
-    &:last-child::before {
-      content: "3";
+      @include vp-1024 {
+        top: 19px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 28px;
+        line-height: 32px;
+      }
     }
   }
 

@@ -23,15 +23,18 @@
     }
 
     @include vp-1304 {
-      padding: 80px;
+      padding: 80px 0 80px 80px;
       display: flex;
-      flex-direction: row-reverse;
+      align-items: center;
+      position: relative;
     }
   }
 
   &__picture {
     @include vp-1304 {
       flex-shrink: 0;
+      position: absolute;
+      right: 0;
     }
   }
 
@@ -40,6 +43,10 @@
 
     @include vp-768 {
       margin: 0 auto 40px auto;
+    }
+
+    @include vp-1304 {
+      margin: 0;
     }
   }
 
@@ -84,6 +91,7 @@
     flex-direction: column;
     gap: 10px 0;
     color: $color-white;
+    list-style-type: none;
 
     @include vp-768 {
       margin: 0 0 32px 0;
@@ -94,6 +102,16 @@
       margin: 0 0 40px 0;
     }
   }
+
+  &__item {
+    display: flex;
+    gap: 12px;
+  }
+
+  &__icon {
+    flex-shrink: 0;
+  }
+
 
   &__text {
     margin: 0;

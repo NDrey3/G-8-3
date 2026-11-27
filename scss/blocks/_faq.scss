@@ -26,6 +26,8 @@
     }
 
     @include vp-1024 {
+      position: sticky;
+      top: 80px;
       margin: 0;
       width: 380px;
       flex-shrink: 0;
@@ -87,6 +89,11 @@
   &__element {
     border-bottom: 2px solid $color-solitude-3;
 
+    @include vp-1024 {
+      background-color: $color-solitude-1;
+      border-radius: 12px;
+    }
+
     &.is-active {
       .faq__content {
         display: block;
@@ -107,6 +114,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 0 14px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 22px;
     text-align: left;
@@ -121,7 +129,9 @@
 
     @include vp-1024 {
       align-items: flex-start;
-      padding: 18px 24px;
+      padding: 18px 24px 20px 24px;
+      font-size: 18px;
+      line-height: 24px;
     }
   }
 
@@ -183,11 +193,11 @@
     line-height: 18px;
 
     @include vp-768 {
-      padding: 0 0 16px 0;
+      padding: 0 16px 16px 0;
     }
 
     @include vp-1024 {
-      padding: 2px 24px 24px 24px;
+      padding: 0 44px 24px 24px;
     }
 
     @include vp-1304 {
