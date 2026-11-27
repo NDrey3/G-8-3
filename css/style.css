@@ -1607,19 +1607,24 @@ a {
   background-color: #DDF1FF;
   position: relative;
 }
+@media (min-width: 500px) {
+  .banner-page__wrapper {
+    padding: 16px 180px 16px 20px;
+  }
+}
 @media (min-width: 768px) {
   .banner-page__wrapper {
-    padding: 25px 24px;
+    padding: 25px 220px 25px 24px;
   }
 }
 @media (min-width: 1024px) {
   .banner-page__wrapper {
-    padding: 48px 100px;
+    padding: 48px 300px 48px 100px;
   }
 }
 @media (min-width: 1304px) {
   .banner-page__wrapper {
-    padding: 48px 120px;
+    padding: 48px 430px 48px 120px;
   }
 }
 .banner-page__title {

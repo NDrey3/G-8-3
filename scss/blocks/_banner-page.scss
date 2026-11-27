@@ -20,16 +20,20 @@
     background-color: $color-alice-blue;
     position: relative;
 
+    @media (min-width: 500px) {
+      padding: 16px 180px 16px 20px;
+    }
+
     @include vp-768 {
-      padding: 25px 24px;
+      padding: 25px 220px 25px 24px;
     }
 
     @include vp-1024 {
-      padding: 48px 100px;
+      padding: 48px 300px 48px 100px;
     }
 
     @include vp-1304 {
-      padding: 48px 120px;
+      padding: 48px 430px 48px 120px;
     }
   }
 
