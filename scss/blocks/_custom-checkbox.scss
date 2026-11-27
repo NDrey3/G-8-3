@@ -1,7 +1,7 @@
 .custom-checkbox {
   width: 100%;
 
-  &__input:checked + .custom-checkbox__label {
+  &__input:checked+.custom-checkbox__label {
     .custom-checkbox__field {
       background-color: $color-royal-blue-1;
       border-color: $color-royal-blue-1;
@@ -29,6 +29,11 @@
     border: 1px solid $color-periwinkle-2;
     border-radius: 4px;
     background-color: $color-white;
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-royal-blue-1;
+    }
   }
 
   &__icon {
@@ -45,5 +50,11 @@
 
   &__link {
     color: $color-royal-blue-1;
+
+    &:hover,
+    &:focus-visible {
+      border-color: $color-free-speech-blue;
+      outline: none;
+    }
   }
 }

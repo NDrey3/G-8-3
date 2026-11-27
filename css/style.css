@@ -563,7 +563,7 @@ a {
 }
 @media (min-width: 1024px) {
   .footer {
-    padding: 80px 0;
+    padding: 75px 0;
   }
 }
 .footer__wrapper {
@@ -742,7 +742,7 @@ a {
 }
 @media (min-width: 1304px) {
   .footer__nav-list {
-    max-width: 390px;
+    max-width: 400px;
   }
 }
 .footer__nav-item {
@@ -773,7 +773,7 @@ a {
 }
 .footer__policy {
   row-gap: 8px;
-  margin: 0 0 24px 0;
+  margin: 0 0 30px 0;
 }
 @media (min-width: 768px) {
   .footer__policy {
@@ -849,6 +849,9 @@ a {
   border-radius: 8px;
   cursor: pointer;
 }
+.btn:hover, .btn:focus-visible {
+  background-color: #D2D4DA;
+}
 .btn[disabled] {
   cursor: default;
 }
@@ -857,10 +860,16 @@ a {
   color: #FFFFFF;
   background-color: #476BF0;
 }
+.btn--secondary:hover, .btn--secondary:focus-visible {
+  background-color: #3356D7;
+}
 .btn--tertiary {
   color: #FFFFFF;
   padding: 15px 24px;
   background-color: #1E222E;
+}
+.btn--tertiary:hover, .btn--tertiary:focus-visible {
+  background-color: #383F52;
 }
 
 .btn-icon {
@@ -876,6 +885,9 @@ a {
   border: none;
   background-color: transparent;
   cursor: pointer;
+}
+.btn-icon:hover, .btn-icon:focus-visible {
+  color: #476BF0;
 }
 .btn-icon__icon {
   width: 24px;
@@ -916,6 +928,10 @@ a {
   line-height: 16px;
   border: 1px solid #CCCFDE;
   border-radius: 10px;
+  outline: none;
+}
+.custom-input__field:hover, .custom-input__field:focus-visible {
+  border-color: #476BF0;
   outline: none;
 }
 @media (min-width: 768px) {
@@ -973,6 +989,9 @@ a {
   border-radius: 4px;
   background-color: #FFFFFF;
 }
+.custom-checkbox__field:hover, .custom-checkbox__field:focus-visible {
+  border-color: #476BF0;
+}
 .custom-checkbox__icon {
   width: 12px;
   height: 12px;
@@ -985,6 +1004,10 @@ a {
 }
 .custom-checkbox__link {
   color: #476BF0;
+}
+.custom-checkbox__link:hover, .custom-checkbox__link:focus-visible {
+  border-color: #3356D7;
+  outline: none;
 }
 
 .form__wrapper {
@@ -1190,12 +1213,6 @@ a {
 @media (min-width: 1024px) {
   .intro {
     padding: 0;
-    margin: 0 0 100px 0;
-  }
-}
-@media (min-width: 1304px) {
-  .intro {
-    margin: 0 0 120px 0;
   }
 }
 .intro__banner-wrapper {
@@ -1428,7 +1445,7 @@ a {
 }
 @media (min-width: 1024px) {
   .debit-card__title {
-    max-width: 696px;
+    max-width: 736px;
     background-color: #FFFFFF;
     position: relative;
     z-index: 2;
@@ -1497,7 +1514,6 @@ a {
   .debit-card-box {
     min-height: 280px;
     padding: 24px 24px 26px 24px;
-    gap: 0;
   }
 }
 @media (min-width: 1024px) {
@@ -1505,6 +1521,7 @@ a {
     align-items: center;
     min-height: auto;
     padding: 0;
+    gap: 0;
     background-color: unset;
   }
 }
@@ -1540,6 +1557,8 @@ a {
   .debit-card-box__title {
     text-align: center;
     margin: 0 0 16px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }
 .debit-card-box__text {
@@ -1552,6 +1571,8 @@ a {
 @media (min-width: 1024px) {
   .debit-card-box__text {
     text-align: center;
+    font-size: 16px;
+    line-height: 22px;
   }
 }
 .debit-card-box__link {
@@ -1678,6 +1699,7 @@ a {
     margin: 0 0 32px 0;
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: -0.01em;
   }
 }
 @media (min-width: 1024px) {
@@ -1687,7 +1709,7 @@ a {
     font-size: 40px;
     line-height: 44px;
     text-align: center;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
   }
 }
 @media (min-width: 1304px) {
@@ -1758,6 +1780,7 @@ a {
     margin: 0 0 32px 0;
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: -0.01em;
   }
 }
 @media (min-width: 1024px) {
@@ -1767,7 +1790,7 @@ a {
     font-size: 40px;
     line-height: 44px;
     text-align: center;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
   }
 }
 @media (min-width: 1024px) {
@@ -1917,6 +1940,7 @@ a {
   .connect__title {
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: -0.01em;
   }
 }
 @media (min-width: 1024px) {
@@ -1926,7 +1950,7 @@ a {
     font-size: 40px;
     line-height: 44px;
     text-align: center;
-    letter-spacing: -0.04em;
+    letter-spacing: -0.03em;
   }
 }
 .connect__text {
@@ -2002,6 +2026,10 @@ a {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+.connect__tabs-control:hover, .connect__tabs-control:focus-visible {
+  background-color: #F4F6FA;
+  outline: none;
 }
 @media (min-width: 360px) {
   .connect__tabs-control {
@@ -2132,6 +2160,11 @@ a {
   font-size: 18px;
   line-height: 24px;
 }
+@media (min-width: 768px) {
+  .connect__item-title {
+    letter-spacing: 0.01em;
+  }
+}
 @media (min-width: 1024px) {
   .connect__item-title {
     margin: 0 0 16px 0;
@@ -2227,7 +2260,7 @@ a {
   font-weight: 600;
   font-size: 24px;
   line-height: 28px;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
   color: #FFFFFF;
 }
 @media (min-width: 1024px) {
@@ -2361,6 +2394,7 @@ a {
   .faq__title {
     font-size: 28px;
     line-height: 32px;
+    letter-spacing: -0.01em;
   }
 }
 @media (min-width: 1024px) {
@@ -2377,7 +2411,7 @@ a {
 @media (min-width: 1024px) {
   .faq__accordion {
     max-width: 700px;
-    gap: 16px 0;
+    gap: 13px 0;
   }
 }
 .faq__element {
@@ -2410,6 +2444,10 @@ a {
   background-color: transparent;
   border: 0;
   cursor: pointer;
+}
+.faq__button:hover, .faq__button:focus-visible {
+  color: #696E82;
+  outline: none;
 }
 @media (min-width: 768px) {
   .faq__button {

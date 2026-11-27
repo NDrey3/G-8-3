@@ -12,6 +12,11 @@
   background-color: transparent;
   cursor: pointer;
 
+  &:hover,
+  &:focus-visible {
+    color: $color-royal-blue-1;
+  }
+
   &__icon {
     width: 24px;
     height: 24px;

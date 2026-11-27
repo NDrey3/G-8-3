@@ -11,13 +11,13 @@
   @include vp-768 {
     min-height: 280px;
     padding: 24px 24px 26px 24px;
-    gap: 0;
   }
 
   @include vp-1024 {
     align-items: center;
     min-height: auto;
     padding: 0;
+    gap: 0;
     background-color: unset;
   }
 
@@ -52,6 +52,8 @@
     @include vp-1024 {
       text-align: center;
       margin: 0 0 16px;
+      font-size: 24px;
+      line-height: 28px;
     }
   }
 
@@ -64,6 +66,8 @@
 
     @include vp-1024 {
       text-align: center;
+      font-size: 16px;
+      line-height: 22px;
     }
   }
 

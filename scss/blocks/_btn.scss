@@ -15,6 +15,11 @@
   border-radius: 8px;
   cursor: pointer;
 
+  &:hover,
+  &:focus-visible {
+    background-color: $color-link-water;
+  }
+
   &[disabled] {
     cursor: default;
   }
@@ -23,11 +28,21 @@
     padding: 19px 32px;
     color: $color-white;
     background-color: $color-royal-blue-1;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-free-speech-blue;
+    }
   }
 
   &--tertiary {
     color: $color-white;
     padding: 15px 24px;
     background-color: $color-black-russian;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-blue-zodiac;
+    }
   }
 }

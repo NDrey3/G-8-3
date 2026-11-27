@@ -3,7 +3,7 @@
   background-color: $color-solitude-1;
 
   @include vp-1024 {
-    padding: 80px 0;
+    padding: 75px 0;
   }
 
   &__wrapper {
@@ -204,7 +204,7 @@
     }
 
     @include vp-1304 {
-      max-width: 390px;
+      max-width: 400px;
     }
   }
 
@@ -239,7 +239,7 @@
 
   &__policy {
     row-gap: 8px;
-    margin: 0 0 24px 0;
+    margin: 0 0 30px 0;
 
     @include vp-768 {
       row-gap: 10px;
@@ -256,6 +256,7 @@
   }
 
   &__policy-link {
+
     &:focus-visible,
     &:hover {
       color: $color-black-russian;

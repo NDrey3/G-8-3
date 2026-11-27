@@ -12,6 +12,12 @@
     border-radius: 10px;
     outline: none;
 
+    &:hover,
+    &:focus-visible {
+      border-color: $color-royal-blue-1;
+      outline: none;
+    }
+
     @include vp-768 {
       padding: 29px 19px 9px 19px;
     }
